@@ -22,13 +22,14 @@ UIResponder
 |clipsToBounds | sbViewがはみ出たら非表示にする（Storyboard可） | `view.clipsToBounds = true` |
 |layer | CALayerプロパティ（レイヤに対して設定をする） | `view.layer.borderWidth = 1.0`|
 |isExclusiveTouch | 同時押しを禁止する（デフォルト=false：同時押し可） | `view.isExclusiveTouch = true`|
+|tag | Viewを識別するためのタグ（デフォルト=0）（Storyboard可） | `view.tag = 1`|
 
 ## 主要メソッド
 
 |メソッド名|説明|サンプル|
 |---|---|---|
-| |  |  |
-| |  |  |
+|addSubview(_ view: UIView) |subViewを追加する  |`view.addSubView(demoView)`  |
+|removeFromSuperview() |親ViewからsubViewを取り除く  |`view.removeFromSuperview()`  |
 
 ## フレームワーク
 UIKit.framework
